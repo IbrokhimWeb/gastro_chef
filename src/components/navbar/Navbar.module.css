@@ -1,0 +1,20 @@
+.navbar {
+    width: 100%;
+
+}
+
+.brand {
+    width: 264px;
+    height: 264px;
+    margin-top: -47px;
+    background-color: #F5FAFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
+}
+
+.logo {
+
+}
