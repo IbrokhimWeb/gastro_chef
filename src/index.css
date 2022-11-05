@@ -44,3 +44,15 @@ body{
     --brown: brown;
     --pink: pink;
 } */
+
+@media (max-width: 770px) {
+    body{
+        width: 770px;
+    }
+}
+
+@media (max-width: 320px) {
+    body{
+        width: 320px;
+    }
+}
