@@ -8,15 +8,18 @@ import logo from "../../assets/logo.png";
 // Import React Icons
 import { FaPhone } from "react-icons/fa";
 import { GoThreeBars } from "react-icons/go";
-import { GrFormClose } from "react-icons/gr";
+import { CgClose } from "react-icons/cg";
 
 function Navbar(props) {
 
-    const [ nav, setNav ] = useState(true);
+    const [nav, setNav] = useState(true);
 
     return (
         <>
             <nav className={s.navbar}>
+                <div className={s.hiddenNav} style={nav ? {left: '-320px'} : {left: '0px'}}>
+                    <div className={s.nav}></div>
+                </div>
                 <Link className={s.brand} to="/">
                     <img className={s.logo} src={logo} alt="logo" />
                     <p>healthy ration</p>
@@ -40,22 +43,20 @@ function Navbar(props) {
                                 <Link className={s.link} to="/blog">Блог</Link>
                             </li>
                             <div className={s.icons}>
-                                <div className={s.icon}>
-                                    <FaPhone className={s.icon__item}/>
+                                <div className={s.icons__phone}>
+                                    <FaPhone className={s.icon__phone} />
                                 </div>
                                 <div className={s.icon}>
                                     {
-                                        nav 
-                                        ? <GoThreeBars className={s.icon__item}/>
-                                        : <GrFormClose className={s.icon__item}/> 
+                                        nav
+                                            ? <GoThreeBars className={s.icon__item} onClick={() => setNav(false)} />
+                                            : <CgClose className={s.icon__item} onClick={() => setNav(true)} />
                                     }
                                 </div>
                             </div>
                         </ul>
                         <div className={s.language}>
-                            <h1>RU</h1>
-                            <h1>UA</h1>
-                            <h1>EN</h1>
+                            <h1>RU</h1><h1>UA</h1><h1>EN</h1>
                         </div>
                     </div>
                     <div className={s.phone__number}>

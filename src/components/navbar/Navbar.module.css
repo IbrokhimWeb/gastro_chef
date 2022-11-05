@@ -10,9 +10,9 @@
 }
 
 .brand {
+    z-index: 999;
     width: 264px;
     height: 264px;
-    z-index: 9999;
     display: flex;
     border-radius: 50%;
     align-items: center;
@@ -46,22 +46,22 @@
 .main>ul {
     width: 880px;
     height: 52px;
-    border-radius: 190px;
-    box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
-    background: #F5FAFF;
     display: flex;
-    margin: 55px 0 0 -220px;
     align-items: center;
+    border-radius: 190px;
+    background: #F5FAFF;
+    margin: 55px 0 0 -220px;
     justify-content: flex-end;
+    box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
 }
 
 .link {
-    margin-right: 40px;
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;
     color: #020202;
     font-style: normal;
+    margin-right: 40px;
     line-height: 133.8%;
     font-family: 'Montserrat', sans-serif;
 }
@@ -74,8 +74,8 @@
 .language {
     gap: 20px;
     display: flex;
-    margin-top: 20px;
     margin-left: 8%;
+    margin-top: 20px;
     align-items: center;
 }
 
@@ -163,22 +163,22 @@
     }
 
     .link {
-        margin-right: 30px;
         font-size: 8px;
+        margin-right: 30px;
     }
 
     .language {
         gap: 10px;
-        margin-top: 10px;
         margin-left: 5%;
+        margin-top: 10px;
         align-items: center;
     }
 
     .language>h1 {
-        width: 20.55px;
-        height: 20.55px;
         display: flex;
+        width: 20.55px;
         font-size: 9px;
+        height: 20.55px;
     }
 
     .phone__number {
@@ -225,26 +225,68 @@
         gap: 10px;
         display: flex;
         position: absolute;
-        /* top: 30%; */
     }
 
     .icon {
         width: 64px;
         height: 64px;
-        border-radius: 50%;
-        background: #F5FAFF;
-        box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
+        z-index: 9999;
         display: flex;
-        justify-content: center;
+        border-radius: 50%;
         align-items: center;
+        background: #F5FAFF;
+        justify-content: center;
+        box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
     }
 
-    .icon:hover .icon__item{
-        color: #64D370;
-    }
-
-    .icon__item{
+    .icon__item {
         width: 27.19px;
         height: 30.29px;
     }
+
+    .icon__phone {
+        width: 27.19px;
+        height: 30.29px;
+        color: #64D370;
+    }
+
+    .icons__phone {
+        width: 64px;
+        height: 64px;
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        background: #F5FAFF;
+        justify-content: center;
+        box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
+    }
+
+    .icons__phone:hover {
+        background-color: #64D370;
+
+    }
+
+    .icons__phone:hover .icon__phone {
+        color: #F4F9FE;
+    }
+
+    .hiddenNav {
+        top: 0px;
+        left: 0px;
+        width: 320px;
+        height: 300vh;
+        position: absolute;
+        background: rgba(2, 2, 2, 0.85);
+    }
+
+    .nav {
+        width: 320px;
+        height: 337px;
+        z-index: 9999;
+        position: absolute;
+        background: #F5FAFF;
+        transform: rotate(180deg);
+        border-radius: 50px 50px 0px 0px;
+    }
+
 }
