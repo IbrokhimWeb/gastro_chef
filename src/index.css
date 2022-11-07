@@ -51,8 +51,8 @@ body{
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 320px) {
     body{
-        width: 770px;
+        width: 320px;
     }
 }

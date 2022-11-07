@@ -57,11 +57,11 @@ function Navbar(props) {
                                 </div>
                             </div>
                         </ul>
-                        <div className={s.language} style={nav ? { left: '-1000px' } : { right: '255px' }}>
+                        <div className={s.language} style={nav ? { left: '-1000px' } : { right: '30px' }}>
                             <h1>RU</h1><h1>UA</h1><h1>EN</h1>
                         </div>
                     </div>
-                    <div className={s.phone__number} style={nav ? { left: '-1000px' } : { left: '200px' }}>
+                    <div className={s.phone__number} style={nav ? { left: '-1000px' } : { left: '10px' }}>
                         <p>+38 (068) 949 - 49 -19</p>
                     </div>
                 </section>

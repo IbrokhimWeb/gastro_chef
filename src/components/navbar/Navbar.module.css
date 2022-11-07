@@ -198,7 +198,7 @@
     }
 }
 
-@media (max-width: 391px) {
+@media (max-width: 320px) {
     .brand {
         width: 139px;
         height: 138px;
@@ -225,7 +225,7 @@
         z-index: 9999;
         position: absolute;
         top: 40px;
-        gap: 22px;
+        gap: 25px;
         left: calc(50% - 176px/2 - 39px);
     }
 
@@ -241,6 +241,7 @@
 
     .language {
         top: 90px;
+        right: 30px;
         z-index: 9999;
         position: absolute;
         flex-direction: column;
@@ -256,7 +257,7 @@
     .phone__number {
         z-index: 9999;
         position: absolute;
-        width: 45%;
+        width: 280px;
         height: 46px;
         top: 271px;
         background: #64D370;
@@ -322,14 +323,14 @@
     .hiddenNav {
         top: 0px;
         left: 0px;
-        width: 770px;
-        height: 300vh;
+        width: 320px;
+        height: 100%;
         position: absolute;
         background: rgba(2, 2, 2, 0.85);
     }
 
     .nav {
-        width: 770px;
+        width: 320px;
         height: 337px;
         z-index: 9999;
         position: absolute;
