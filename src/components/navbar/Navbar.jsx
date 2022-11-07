@@ -17,7 +17,7 @@ function Navbar(props) {
     return (
         <>
             <nav className={s.navbar}>
-                <div className={s.hiddenNav} style={nav ? {left: '-320px'} : {left: '0px'}}>
+                <div className={s.hiddenNav} style={nav ? { left: '-420px' } : { left: '0px' }}>
                     <div className={s.nav}></div>
                 </div>
                 <Link className={s.brand} to="/">
@@ -27,21 +27,23 @@ function Navbar(props) {
                 <section className={s.section}>
                     <div className={s.main}>
                         <ul>
-                            <li>
-                                <Link className={s.link} to="/feeding">Програмы питания</Link>
-                            </li>
-                            <li>
-                                <Link className={s.link} to="/lunches">Бизнес-ланчи</Link>
-                            </li>
-                            <li>
-                                <Link className={s.link} to="/gastro/shop">Gastro Shop</Link>
-                            </li>
-                            <li>
-                                <Link className={s.link} to="/about">О нас</Link>
-                            </li>
-                            <li>
-                                <Link className={s.link} to="/blog">Блог</Link>
-                            </li>
+                            <div className={s.addition} style={nav ? { left: '-420px' } : { left: 'calc(50% - 176px/2 - 39px)' }}>
+                                <li>
+                                    <Link className={s.link} to="/feeding"  >Програмы питания</Link>
+                                </li>
+                                <li>
+                                    <Link className={s.link} to="/lunches" >Бизнес-ланчи</Link>
+                                </li>
+                                <li>
+                                    <Link className={s.link} to="/gastro/shop" >Gastro Shop</Link>
+                                </li>
+                                <li>
+                                    <Link className={s.link} to="/about" >О нас</Link>
+                                </li>
+                                <li>
+                                    <Link className={s.link} to="/blog" >Блог</Link>
+                                </li>
+                            </div>
                             <div className={s.icons}>
                                 <div className={s.icons__phone}>
                                     <FaPhone className={s.icon__phone} />
@@ -55,11 +57,11 @@ function Navbar(props) {
                                 </div>
                             </div>
                         </ul>
-                        <div className={s.language}>
+                        <div className={s.language} style={nav ? { left: '-420px' } : { right: '30px' }}>
                             <h1>RU</h1><h1>UA</h1><h1>EN</h1>
                         </div>
                     </div>
-                    <div className={s.phone__number}>
+                    <div className={s.phone__number} style={nav ? { left: '-420px' } : { left: '0px' }}>
                         <p>+38 (068) 949 - 49 -19</p>
                     </div>
                 </section>
