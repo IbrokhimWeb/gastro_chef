@@ -6,6 +6,7 @@ import s from './App.module.css';
 // Import Components
 import Loader from "./components/loader/Loader";
 import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
                         <Routes>
                             {/* <Route path="/" element={<Home/>} /> */}
                         </Routes>
+                        <Footer/>
                     </BrowserRouter>
             }
         </>

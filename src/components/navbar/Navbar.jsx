@@ -27,21 +27,40 @@ function Navbar(props) {
                 <section className={s.section}>
                     <div className={s.main}>
                         <ul>
-                            <div className={s.addition} style={nav ? { left: '-1000px' } : { left: 'calc(50% - 176px/2 - 39px)' }}>
+                            <div
+                                className={s.addition}
+                                style={
+                                    nav
+                                        ? { left: '-1000px' }
+                                        : { left: 'calc(50% - 176px/2 - 39px)' }
+                                }
+                                onClick={(e) => {
+                                    let val = e.target.innerText;
+                                    e.target.className = s.activeColor;
+                                    let linksArr = document.querySelectorAll("#link");
+                                    Array.from(linksArr).forEach((i) => {
+                                        if (i.innerText === val) {
+                                            i.className = s.activeColor;
+                                        } else {
+                                            i.className = s.link;
+                                        }
+                                    });
+                                }}
+                            >
                                 <li>
-                                    <Link className={s.link} to="/feeding"  >Програмы питания</Link>
+                                    <Link id={'link'} className={s.link} to="/feeding"  >Програмы питания</Link>
                                 </li>
                                 <li>
-                                    <Link className={s.link} to="/lunches" >Бизнес-ланчи</Link>
+                                    <Link id={'link'} className={s.link} to="/lunches" >Бизнес-ланчи</Link>
                                 </li>
                                 <li>
-                                    <Link className={s.link} to="/gastro/shop" >Gastro Shop</Link>
+                                    <Link id={'link'} className={s.link} to="/gastro/shop" >Gastro Shop</Link>
                                 </li>
                                 <li>
-                                    <Link className={s.link} to="/about" >О нас</Link>
+                                    <Link id={'link'} className={s.link} to="/about" >О нас</Link>
                                 </li>
                                 <li>
-                                    <Link className={s.link} to="/blog" >Блог</Link>
+                                    <Link id={'link'} className={s.link} to="/blog" >Блог</Link>
                                 </li>
                             </div>
                             <div className={s.icons}>
@@ -57,8 +76,29 @@ function Navbar(props) {
                                 </div>
                             </div>
                         </ul>
-                        <div className={s.language} style={nav ? { left: '-1000px' } : { right: '30px' }}>
-                            <h1>RU</h1><h1>UA</h1><h1>EN</h1>
+                        <div
+                            className={s.language}
+                            style={
+                                nav
+                                    ? { left: '-1000px' }
+                                    : { right: '30px' }
+                            }
+                            onClick={(e) => {
+                                let val = e.target.innerText;
+                                e.target.className = s.activeBg;
+                                let linksArr = document.querySelectorAll("#lang");
+                                Array.from(linksArr).forEach((i) => {
+                                    if (i.innerText === val) {
+                                        i.className = s.activeBg;
+                                    } else {
+                                        i.className = s.lang;
+                                    }
+                                });
+                            }}
+                        >
+                            <h1 id={'lang'} className={s.lang}>RU</h1>
+                            <h1 id={'lang'} className={s.lang}>UA</h1>
+                            <h1 id={'lang'} className={s.lang}>EN</h1>
                         </div>
                     </div>
                     <div className={s.phone__number} style={nav ? { left: '-1000px' } : { left: '10px' }}>
@@ -66,7 +106,7 @@ function Navbar(props) {
                     </div>
                 </section>
 
-            </nav>
+            </nav >
         </>
     );
 }

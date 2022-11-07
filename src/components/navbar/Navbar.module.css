@@ -1,6 +1,16 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@100;200;300;400;500;600;700&display=swap);
 
+.activeColor {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    margin-right: 40px;
+    line-height: 133.8%;
+    font-family: 'Montserrat', sans-serif;
+    color: #64D370;
+}
 
 .navbar {
     width: 100%;
@@ -77,6 +87,26 @@
     color: #64D370;
 }
 
+.activeBg{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 400;
+    color: #F4F9FE;
+    line-height: 100%;
+    font-style: normal;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.025em;
+    background-color: #64D370;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
+
+}
+
 .language {
     gap: 20px;
     display: flex;
@@ -85,7 +115,7 @@
     align-items: center;
 }
 
-.language>h1 {
+.lang {
     width: 35px;
     height: 35px;
     display: flex;
@@ -104,12 +134,12 @@
     box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
 }
 
-.language>h1:hover {
+.lang:hover {
     color: #F4F9FE;
     background-color: #64D370;
 }
 
-.language>h1:active {
+.lang:active {
     color: #F4F9FE;
     background-color: #64D370;
 }
@@ -142,6 +172,18 @@
 }
 
 @media (max-width: 770px) {
+
+    .activeColor {
+        cursor: pointer;
+        font-size: 8px;
+        margin-right: 30px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 133.8%;
+        font-family: 'Montserrat', sans-serif;
+        color: #64D370;
+    }
+
     .navbar {
         height: 150px;
         margin-top: -35px;
@@ -180,7 +222,8 @@
         align-items: center;
     }
 
-    .language>h1 {
+    .activeBg, 
+    .lang {
         display: flex;
         width: 20.55px;
         font-size: 9px;
@@ -199,6 +242,17 @@
 }
 
 @media (max-width: 320px) {
+    .activeColor {
+        z-index: 9999;
+        cursor: pointer;
+        font-size: 16px;
+        font-style: normal;
+        font-family: 'Comfortaa', display;
+        color: #64D370;
+        font-weight: 700;
+        line-height: 133.8%;
+    }
+
     .brand {
         width: 139px;
         height: 138px;
@@ -248,7 +302,8 @@
 
     }
 
-    .language>h1 {
+    .activeBg,
+    .lang {
         width: 39px;
         height: 39px;
         box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);

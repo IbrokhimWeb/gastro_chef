@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@100;200;300;400;500;600;700&display=swap);
+
+.footer {
+    height: 263px;
+    background: #F5FAFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 30px rgba(86, 86, 86, 0.25);
+}
+
+.main {
+    width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links>ul {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    width: 220px;
+    height: 22px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+
+    color: #020202;
+    font-family: 'Comfortaa', display;
+
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand>img {
+    width: 422.03px;
+    height: 174.63px;
+}
+
+.brand>p {
+    margin-top: -15px;
+    width: 391px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115.8%;
+    text-align: center;
+    color: #020202;
+    font-family: 'Comfortaa', display;
+
+}
+
+.contact {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact>p {
+    width: 300px;
+    font-family: 'Comfortaa', display;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: right;
+    color: #020202;
+}
+
+.faq {
+    width: 300px;
+    font-family: 'Comfortaa', display;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: #020202;
+}
+
+.contact>h3 {
+    width: 300px;
+    height: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #64D370;
+    text-align: end;
+}
+
+.social__media {
+    margin-left: 85px;
+    gap: 30px;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: center;
+}
+
+.social__fill {
+    width: 30px;
+    height: 30px;
+    background-color: #020202;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    color: #F5FAFF;
+    align-items: center;
+}
+
+.social__icons {
+    font-size: 30px;
+    color: #020202;
+}
+
+@media (max-width: 770px) {
+    .main {
+        width: 690px;
+        height: 186.29px;
+    }
+
+    .links>ul {
+        gap: 10px;
+    }
+
+    .link {
+        width: 155.83px;
+        height: 15.58px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .brand>img {
+        width: 298.93px;
+        height: 123.7px;
+    }
+
+    .brand>p {
+        margin-top: -15px;
+        width: 276.95px;
+        height: 14.17px;
+        font-size: 14px;
+    }
+
+    .contact {
+        gap: 10px;
+    }
+
+
+    .contact>p {
+        width: 138.83px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .faq {
+        width: 30.46px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .contact>h3 {
+        width: 170px;
+        font-size: 14px;
+        line-height: 17px;
+        margin-left: -32px;
+    }
+
+    .social__media {
+        gap: 10px;
+        margin-left: 20px;
+    }
+
+    .social__fill {
+        width: 21.25px;
+        height: 21.25px; 
+        font-size: 10px;   
+    }
+
+    .social__icons{
+        font-size: 21px;
+    }
+
+}
