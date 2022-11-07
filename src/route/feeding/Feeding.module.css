@@ -1,0 +1,11 @@
+.circle {
+    z-index: -9999;
+    position: absolute;
+    width: 1293.88px;
+    height: 1293.88px;
+    right: -399px;
+    top: -147.47px;
+    border-radius: 50%;
+    background: #64D370;
+    box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.4);
+}

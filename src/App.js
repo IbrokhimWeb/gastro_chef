@@ -8,6 +8,13 @@ import Loader from "./components/loader/Loader";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 
+// Import Routes
+import Feeding from "./route/feeding/Feeding";
+import Lunches from "./route/lunches/Lunches";
+import Shop from "./route/shop/Shop";
+import About from "./route/about/About";
+import Blog from "./route/blog/Blog";
+
 function App() {
 
     const [loader, setLoader] = useState(true);
@@ -22,11 +29,19 @@ function App() {
                     :
                     // Muammo yo'q bo'lsa loader o'chadi va sahifa ko'rinadi 
                     <BrowserRouter>
-                        <Navbar />
+                        <div className={s.navbar__fixed}>
+                            <Navbar />
+                        </div>
                         <Routes>
-                            {/* <Route path="/" element={<Home/>} /> */}
+                            <Route path="/" element={<Feeding/>} />
+                            <Route path="/feeding" element={<Feeding />} />
+                            <Route path="/lunches" element={<Lunches />} />
+                            <Route path="/gastro/shop" element={<Shop />} />
+                            <Route path="/about" element={<About />} />
+                            <Route path="/blog" element={<Blog />} />
+
                         </Routes>
-                        <Footer/>
+                            <Footer />
                     </BrowserRouter>
             }
         </>

@@ -48,19 +48,54 @@ function Navbar(props) {
                                 }}
                             >
                                 <li>
-                                    <Link id={'link'} className={s.link} to="/feeding"  >Програмы питания</Link>
+                                    <Link
+                                        id={'link'}
+                                        className={s.link}
+                                        to="/feeding"
+                                        onClick={
+                                            () => setNav(true)}
+                                    > Програмы питания
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link id={'link'} className={s.link} to="/lunches" >Бизнес-ланчи</Link>
+                                    <Link
+                                        id={'link'}
+                                        className={s.link}
+                                        to="/lunches"
+                                        onClick={
+                                            () => setNav(true)}
+                                    > Бизнес-ланчи
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link id={'link'} className={s.link} to="/gastro/shop" >Gastro Shop</Link>
+                                    <Link
+                                        id={'link'}
+                                        className={s.link}
+                                        to="/gastro/shop"
+                                        onClick={
+                                            () => setNav(true)}
+                                    > Gastro Shop
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link id={'link'} className={s.link} to="/about" >О нас</Link>
+                                    <Link
+                                        id={'link'}
+                                        className={s.link}
+                                        to="/about"
+                                        onClick={
+                                            () => setNav(true)}
+                                    > О нас
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link id={'link'} className={s.link} to="/blog" >Блог</Link>
+                                    <Link
+                                        id={'link'}
+                                        className={s.link}
+                                        to="/blog"
+                                        onClick={
+                                            () => setNav(true)}
+                                    > Блог
+                                    </Link>
                                 </li>
                             </div>
                             <div className={s.icons}>
@@ -96,9 +131,9 @@ function Navbar(props) {
                                 });
                             }}
                         >
-                            <h1 id={'lang'} className={s.lang}>RU</h1>
-                            <h1 id={'lang'} className={s.lang}>UA</h1>
-                            <h1 id={'lang'} className={s.lang}>EN</h1>
+                            <h1 id={'lang'} className={s.lang} onClick={() => setNav(true)}>RU</h1>
+                            <h1 id={'lang'} className={s.lang} onClick={() => setNav(true)}>UA</h1>
+                            <h1 id={'lang'} className={s.lang} onClick={() => setNav(true)}>EN</h1>
                         </div>
                     </div>
                     <div className={s.phone__number} style={nav ? { left: '-1000px' } : { left: '10px' }}>

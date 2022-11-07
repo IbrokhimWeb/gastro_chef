@@ -50,18 +50,11 @@ function Footer(props) {
                                 <BsWhatsapp />
                             </a>
                             <a className={s.social__icons} href="#">
-                                <BsTelegram/>
+                                <BsTelegram />
                             </a>
                         </div>
                         <h3>+38 (068) 949 - 49 - 19</h3>
                     </section>
-
-
-
-
-
-
-
                 </main>
             </footer>
         </>

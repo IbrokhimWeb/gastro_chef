@@ -185,12 +185,25 @@
 
     .social__fill {
         width: 21.25px;
-        height: 21.25px; 
-        font-size: 10px;   
+        height: 21.25px;
+        font-size: 10px;
     }
 
-    .social__icons{
+    .social__icons {
         font-size: 21px;
     }
+}
 
+@media (max-width: 320px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .contact>p {
+        display: none;
+    }
 }

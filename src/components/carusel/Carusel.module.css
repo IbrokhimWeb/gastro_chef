@@ -1,0 +1,53 @@
+.carusel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    padding: 0 50px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.multimedia {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.media {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #F5FAFF;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 138.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #020202;
+    position: relative;
+    box-shadow: 0px 0px 30px rgba(86, 86, 86, 0.25);
+}
+
+.media>p {
+    font-size: 20px;
+}
+
+.media>span {
+    top: 10px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 100%;
+    position: absolute;
+}

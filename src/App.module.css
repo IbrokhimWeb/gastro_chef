@@ -1,0 +1,15 @@
+.navbar__fixed,
+.footer__fixed{
+    left: 50%;
+    right: 50%;
+    position: fixed;
+    margin: auto;
+}
+
+.navbar__fixed{
+    top: 0;
+}
+
+.footer__fixed{
+    bottom: 0;
+}

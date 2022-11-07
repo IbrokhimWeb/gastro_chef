@@ -23,12 +23,16 @@ li{
 body{
     margin: 0 auto;
     padding: 10px 0;
-    /* overflow: auto; */
+    overflow-x: hidden;
     width: 1920px;
     min-height: 100vh;
     position: relative;
     background-color: #F5FAFF;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.152);
+}
+
+.section{
+    padding: 215px 0 150px;
 }
 
 /* :root{
