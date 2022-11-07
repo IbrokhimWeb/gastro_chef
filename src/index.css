@@ -23,7 +23,7 @@ li{
 body{
     margin: 0 auto;
     padding: 10px 0;
-    overflow: auto;
+    /* overflow: auto; */
     width: 1920px;
     min-height: 100vh;
     position: relative;
@@ -51,8 +51,8 @@ body{
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 390px) {
     body{
-        width: 320px;
+        width: 770px;
     }
 }

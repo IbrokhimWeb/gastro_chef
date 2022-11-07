@@ -17,7 +17,7 @@ function Navbar(props) {
     return (
         <>
             <nav className={s.navbar}>
-                <div className={s.hiddenNav} style={nav ? { left: '-420px' } : { left: '0px' }}>
+                <div className={s.hiddenNav} style={nav ? { left: '-1000px' } : { left: '0px' }}>
                     <div className={s.nav}></div>
                 </div>
                 <Link className={s.brand} to="/">
@@ -27,7 +27,7 @@ function Navbar(props) {
                 <section className={s.section}>
                     <div className={s.main}>
                         <ul>
-                            <div className={s.addition} style={nav ? { left: '-420px' } : { left: 'calc(50% - 176px/2 - 39px)' }}>
+                            <div className={s.addition} style={nav ? { left: '-1000px' } : { left: 'calc(50% - 176px/2 - 39px)' }}>
                                 <li>
                                     <Link className={s.link} to="/feeding"  >Програмы питания</Link>
                                 </li>
@@ -57,11 +57,11 @@ function Navbar(props) {
                                 </div>
                             </div>
                         </ul>
-                        <div className={s.language} style={nav ? { left: '-420px' } : { right: '30px' }}>
+                        <div className={s.language} style={nav ? { left: '-1000px' } : { right: '255px' }}>
                             <h1>RU</h1><h1>UA</h1><h1>EN</h1>
                         </div>
                     </div>
-                    <div className={s.phone__number} style={nav ? { left: '-420px' } : { left: '0px' }}>
+                    <div className={s.phone__number} style={nav ? { left: '-1000px' } : { left: '200px' }}>
                         <p>+38 (068) 949 - 49 -19</p>
                     </div>
                 </section>
